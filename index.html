@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RATI Official</title>
+  <meta name="description" content="RATI Official - Premium Earrings & Fashion Accessories Store" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #fffaf7;
+      color: #1f2937;
+    }
+
+    nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      position: fixed;
+      top: 0;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #d97706;
+      letter-spacing: 2px;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #111827;
+      font-weight: 500;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 120px 8% 60px;
+      gap: 40px;
+      background: linear-gradient(to right, #fff7ed, #ffffff);
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .hero-text h1 {
+      font-size: 4rem;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      color: #111827;
+    }
+
+    .hero-text span {
+      color: #d97706;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      color: #4b5563;
+      margin-bottom: 30px;
+      max-width: 600px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #d97706;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      background: #b45309;
+    }
+
+    .hero-image {
+      flex: 1;
+      min-width: 300px;
+      text-align: center;
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 30px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    }
+
+    section {
+      padding: 80px 8%;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+      color: #111827;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .price {
+      color: #d97706;
+      font-weight: 700;
+      margin-bottom: 15px;
+      display: block;
+    }
+
+    .features {
+      background: #111827;
+      color: white;
+      border-radius: 30px;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .feature-box {
+      background: rgba(255,255,255,0.05);
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: #111827;
+      color: #d1d5db;
+    }
+
+    @media(max-width:900px){
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text h1 {
+        font-size: 2.8rem;
+      }
+
+      nav ul {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">RATI</div>
+
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Elegant <span>Earrings</span><br>For Modern Style</h1>
+
+      <p>
+        Discover premium quality earrings and fashion accessories designed to elevate your everyday look.
+      </p>
+
+      <a href="#shop" class="btn">Shop Collection</a>
+    </div>
+
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?q=80&w=1200&auto=format&fit=crop" alt="Earrings">
+    </div>
+  </section>
+
+  <section id="shop">
+    <h2 class="title">Trending Collection</h2>
+
+    <div class="products">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1635767798638-3e25273a8236?q=80&w=1200&auto=format&fit=crop" alt="Gold Earrings">
+
+        <div class="card-content">
+          <h3>Golden Luxe Earrings</h3>
+          <span class="price">₹799</span>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?q=80&w=1200&auto=format&fit=crop" alt="Pearl Earrings">
+
+        <div class="card-content">
+          <h3>Pearl Drop Earrings</h3>
+          <span class="price">₹999</span>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?q=80&w=1200&auto=format&fit=crop" alt="Silver Earrings">
+
+        <div class="card-content">
+          <h3>Silver Shine Hoops</h3>
+          <span class="price">₹699</span>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <h2 class="title">Why Choose RATI</h2>
+
+    <div class="feature-grid">
+      <div class="feature-box">
+        <h3>Premium Quality</h3>
+        <p>High quality materials with modern fashion trends.</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>Fast Delivery</h3>
+        <p>Quick shipping and secure packaging across India.</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>Affordable Prices</h3>
+        <p>Stylish accessories at budget-friendly pricing.</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>24/7 Support</h3>
+        <p>Friendly customer support whenever you need help.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <h2 style="margin-bottom:10px;">RATI Official</h2>
+    <p>Fashion Earrings & Accessories Store</p>
+    <p style="margin-top:15px;">© 2026 RATI. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
